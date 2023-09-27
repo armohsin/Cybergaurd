@@ -10,6 +10,7 @@ import { UserAuthContextProvider } from './Context/UserAuth';
 import Protected from './Pages/Protected';
 import Home from './Pages/Home';
 import InnerRoutes from './Pages/InnerRoutes';
+import EncryptPage from './Pages/EncryptPage';
 
 function App() {
   useEffect(() => {
@@ -24,6 +25,7 @@ function App() {
             <Route path="/" element={<SignUp />} />
             <Route path="/log-in" element={<SignIn />} />
             <Route path="/Dasboard" element={<Protected><InnerRoutes/></Protected>} />
+            <Route path="/Encrypt" element={<Protected><EncryptPage/></Protected>} />
           </Routes>
         </UserAuthContextProvider>
       </section>

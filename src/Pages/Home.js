@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Home() {
 
@@ -8,7 +9,7 @@ function Home() {
             <div className="grid    grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                 {/* Column 1 */}
                 <div className="p-4 ">
-
+                    <Link to='/Encrypt'>
                     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
 
                         <img style={{ height: 180, width: 600 }} class="rounded-t-lg h-100" height="15" src="https://media.wired.co.uk/photos/606da03e687a704c2c3617da/16:9/w_1920,c_limit/encryption_1.jpg" alt="" />
@@ -21,6 +22,7 @@ function Home() {
 
                         </div>
                     </div>
+                    </Link>
 
                 </div>
                 {/* Column 2 */}
