@@ -1,15 +1,11 @@
 // src/App.js
-import React from 'react';
+import React, { useState } from 'react';
 
 
-function EncryptPage() {
- 
-
-  return (
-    <div >
-      <h1>Hi</h1>
-    </div>
-  );
+function EncryptPage() { 
+  return(
+    <div>Hi</div>
+  )
 }
 
 export default EncryptPage;

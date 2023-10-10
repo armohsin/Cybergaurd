@@ -78,16 +78,18 @@ function Home() {
                     </div>
                 </div>
                 {/* Column 6 (only visible on screens larger than md) */}
+                <Link to="/password-checker" >
                 <div className="p-4  md:block">
                     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                            <img class="rounded-t-lg" style={{ height: 180, width: 600 }} src="https://site.surveysparrow.com/wp-content/uploads/2020/11/Advantages-of-adding-chatbot-for-website-@2x-Copy-1.png" alt="" />
+                            <img class="rounded-t-lg" style={{ height: 180, width: 600 }} src="https://blog.absoluteitad.com/hubfs/Best%20Practices%20For%20Password%20Security%20In%20The%20Workplace.jpg" alt="" />
                         <div class="p-5">
-                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Secure Bot</h5>
-                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Ask anything cyber related with our latest chatbot.</p>
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Password Checker</h5>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">With the help of out tool you can now generate or check your password</p>
 
                         </div>
                     </div>
                 </div>
+                </Link>
             </div>
         </div>
 

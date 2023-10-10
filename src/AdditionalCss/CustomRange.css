@@ -1,0 +1,27 @@
+.custom-range {
+    -webkit-appearance: none; /* Remove default styles for WebKit browsers */
+    appearance: none;
+    width: 100%;
+    height: 5px; /* Set the height of the slider */
+    background: green; /* Set the background color */
+    border-radius: 5px; /* Round the edges of the track */
+  }
+  
+  .custom-range::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Remove default styles for WebKit browsers */
+    appearance: none;
+    width: 20px; /* Set the width of the thumb */
+    height: 20px; /* Set the height of the thumb */
+    background: green; /* Set the background color of the thumb */
+    border-radius: 50%; /* Make the thumb round */
+    cursor: pointer; /* Add a pointer cursor to the thumb */
+  }
+  
+  .custom-range::-moz-range-thumb {
+    width: 20px; /* Set the width of the thumb for Firefox */
+    height: 20px; /* Set the height of the thumb for Firefox */
+    background: green; /* Set the background color of the thumb for Firefox */
+    border-radius: 50%; /* Make the thumb round for Firefox */
+    cursor: pointer; /* Add a pointer cursor to the thumb for Firefox */
+  }
+  

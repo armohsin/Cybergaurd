@@ -11,7 +11,7 @@ import Protected from './Pages/Protected';
 import Home from './Pages/Home';
 import InnerRoutes from './Pages/InnerRoutes';
 import EncryptPage from './Pages/EncryptPage';
-
+import PswdChk from './Tools/PswdChk';
 function App() {
   useEffect(() => {
     AOS.init();
@@ -26,6 +26,8 @@ function App() {
             <Route path="/log-in" element={<SignIn />} />
             <Route path="/Dasboard" element={<Protected><InnerRoutes/></Protected>} />
             <Route path="/Encrypt" element={<Protected><EncryptPage/></Protected>} />
+            <Route path="/password-checker" element={<Protected><PswdChk /></ Protected>} />
+
           </Routes>
         </UserAuthContextProvider>
       </section>

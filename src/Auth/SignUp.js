@@ -175,7 +175,7 @@ function SignUp() {
 
 
 
-
+        <div class="pt-4 m-10 bg-white">
         <h2 className="text-4xl font-bold mb-4"><span className='text-green-600' >Tools</span> for you</h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
@@ -191,7 +191,7 @@ function SignUp() {
             </div>
           ))}
         </div>
-
+        </div>
 
       </div>
     </div>
