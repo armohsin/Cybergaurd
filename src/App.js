@@ -5,13 +5,14 @@ import SignUp from './Auth/SignUp';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes} from 'react-router-dom';
 import { UserAuthContextProvider } from './Context/UserAuth';
 import Protected from './Pages/Protected';
 import Home from './Pages/Home';
 import InnerRoutes from './Pages/InnerRoutes';
 import EncryptPage from './Pages/EncryptPage';
 import PswdChk from './Tools/PswdChk';
+
 function App() {
   useEffect(() => {
     AOS.init();
