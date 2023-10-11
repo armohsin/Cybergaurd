@@ -5,7 +5,7 @@ function Home() {
 
     return (
 
-        <div className="flex justify-center items-center min-h-scr" >
+        <div className="flex bg-gray-100 justify-center items-center min-h-scr" >
             <div className="grid    grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                 {/* Column 1 */}
                 <div className="p-4 ">
