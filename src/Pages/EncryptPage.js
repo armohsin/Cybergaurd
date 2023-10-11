@@ -139,6 +139,7 @@ function EncryptPage() {
 
             <div >
               <form onSubmit={formHandler}>
+                
                 <input
                   type='file'
                 />

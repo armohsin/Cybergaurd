@@ -7,7 +7,7 @@ import 'aos/dist/aos.css';
 import { Link, useNavigate } from 'react-router-dom'
 import { useUserAuth } from '../Context/UserAuth';
 import ScreenShot from '../Images/screenshot.jpg'
-
+import { Typewriter } from 'react-simple-typewriter'
 
 function SignUp() {
 
@@ -61,7 +61,17 @@ function SignUp() {
         <div class="px-12 mx-auto max-w-7xl">
           <div class="w-full mx-auto text-left md:w-11/12 xl:w-9/12 md:text-center">
             <h1 class="mb-8 text-4xl font-extrabold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight">
-              <span>Your Ultimate Resource for</span> <span class="block w-full py-2 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-green-400 to-purple-500 lg:inline"> Security Solutions </span> <span> and Knowlegde</span>
+              <span>Your Ultimate Resource for {' '}</span> <span class="block w-full py-2 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-green-400 to-purple-500 lg:inline"> 
+              <Typewriter
+            words={['Security Solutions', 'Cyber Knowlegde']}
+            loop={0}
+            cursor
+            cursorStyle='_'
+            typeSpeed={90}
+            deleteSpeed={50}
+            delaySpeed={3000}
+           
+          />  </span> 
             </h1>
             <p class="px-0 mb-8 text-lg text-gray-600 md:text-xl lg:px-24">
 
