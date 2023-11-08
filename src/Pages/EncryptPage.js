@@ -1,6 +1,7 @@
 // src/App.js
 import React, { useState } from 'react';
 import { storage } from '../firebasConfig';
+
 import { ref, getDownloadURL, uploadBytesResumable, deleteObject } from "firebase/storage";
 import { useNavigate } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid'; // Import the uuid library
@@ -52,8 +53,21 @@ function EncryptPage() {
     //
     if (!file) return;
 
+
+
     // Generate a unique key for the file (e.g., using Firebase's push key generation)
-    const fileId = uuidv4();
+    function generateCustomKey() {
+      const timestamp = new Date().getTime(); // Get current timestamp
+      const random = Math.floor(Math.random() * 10000); // Generate a random number
+    
+      // Combine the timestamp and random number to create a custom key
+      const customKey = `${timestamp}-${random}`;
+    
+      return customKey;
+    }
+    const fileId = generateCustomKey();
+
+    // const fileId = uuidv4();
     setFileId(fileId);
     console.log(fileId)
 

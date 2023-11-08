@@ -12,6 +12,7 @@ import Home from './Pages/Home';
 import InnerRoutes from './Pages/InnerRoutes';
 import EncryptPage from './Pages/EncryptPage';
 import PswdChk from './Tools/PswdChk';
+import Steg from './Pages/Steg';
 
 function App() {
   useEffect(() => {
@@ -28,6 +29,7 @@ function App() {
             <Route path="/Dasboard" element={<Protected><InnerRoutes/></Protected>} />
             <Route path="/Encrypt" element={<Protected><EncryptPage/></Protected>} />
             <Route path="/password-checker" element={<Protected><PswdChk /></ Protected>} />
+            <Route path="/steganography" element={<Protected><Steg /></ Protected>} />
 
           </Routes>
         </UserAuthContextProvider>

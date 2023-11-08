@@ -27,10 +27,11 @@ function Home() {
                 </div>
                 {/* Column 2 */}
                 <div className="p-4 ">
+                    <Link to ='/steganography'>
                     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                        <a href="#">
+                        
                             <img class="rounded-t-lg h-100" style={{ height: 180, width: 600 }} src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*tBgGg5wbAv9yrFvQBHxcLg.jpeg" alt="" />
-                        </a>
+                        
                         <div class="p-5">
                             <a href="#">
                                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Steganography</h5>
@@ -39,6 +40,7 @@ function Home() {
 
                         </div>
                     </div>
+                    </Link>
                 </div>
                 {/* Column 3 */}
                 <div className="p-4 ">
