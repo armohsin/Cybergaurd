@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function Steg() {
+  const navigate = useNavigate();
+
   const [message, setMessage] = useState('');
   const [image, setImage] = useState(null);
 
@@ -137,8 +140,21 @@ function Steg() {
 
 
   return (
-    <div className="h-screen flex justify-center items-center">
+    <div  className="h-screen flex flex-col bg-gray-100">
+      <div className="relative">
+        <button
+          onClick={() => navigate(-1)}
+          className="absolute top-0 left-5 mt-2 mr-4 flex items-center rounded-full border border-green-500 hover:bg-green-600 hover:text-white hover:border-green-600 transition-all duration-300 p-2 hover:p-3 hover:font-bold"
+        >
+          <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+            <path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm3 5.753l-6.44 5.247 6.44 5.263-.678.737-7.322-6 7.335-6 .665.753z" />
+          </svg>
+          <span className="ml-2">Go Back</span>
+        </button>
+      </div>
+      
       <div className="container mx-auto p-4">
+        <div className="min-h-screen  flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
         <div className="lg:w-1/3 p-4">
           <div className="bg-white shadow-lg p-4 rounded-lg">
             <h2 className="text-2xl font-bold mb-4">Encode an image with a message</h2>
@@ -165,6 +181,7 @@ function Steg() {
             <canvas id="imageCanvas2"></canvas>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );

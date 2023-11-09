@@ -69,6 +69,7 @@ function Home() {
                 </div>
                 {/* Column 5 (only visible on screens larger than sm) */}
                 <div className="p-4  sm:block">
+                    <Link to='/ping-scanner' >
                     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                             <img class="rounded-t-lg"  style={{ height: 180, width: 600 }} src="https://nakedsecurity.sophos.com/wp-content/uploads/sites/2/2022/12/ping-ping-1200.png?resize=1024,535" alt="" />
                         
@@ -78,6 +79,7 @@ function Home() {
 
                         </div>
                     </div>
+                    </Link>
                 </div>
                 {/* Column 6 (only visible on screens larger than md) */}
                 <Link to="/password-checker" >

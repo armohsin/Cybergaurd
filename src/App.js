@@ -13,6 +13,8 @@ import InnerRoutes from './Pages/InnerRoutes';
 import EncryptPage from './Pages/EncryptPage';
 import PswdChk from './Tools/PswdChk';
 import Steg from './Pages/Steg';
+import PingScanner from './Pages/PingScanner';
+import Resources from './Pages/Resources';
 
 function App() {
   useEffect(() => {
@@ -30,6 +32,8 @@ function App() {
             <Route path="/Encrypt" element={<Protected><EncryptPage/></Protected>} />
             <Route path="/password-checker" element={<Protected><PswdChk /></ Protected>} />
             <Route path="/steganography" element={<Protected><Steg /></ Protected>} />
+            <Route path="/ping-scanner" element={<Protected><PingScanner /></ Protected>} />
+            <Route path="/cg-resources" element={<Protected><Resources /></ Protected>} />
 
           </Routes>
         </UserAuthContextProvider>

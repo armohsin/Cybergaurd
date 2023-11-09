@@ -20,8 +20,8 @@ export default function Header() {
     }
 
     const navigation = [
-        { name: 'Dashboard', href: '#', current: true },
-        { name: 'Resources', href: '#', current: false },
+        { name: 'Dashboard', href: '/Dasboard', current: false },
+        { name: 'Resources', href: '/cg-resources', current: false },
         { name: 'Blogs', href: '#', current: false },
     ]
 
